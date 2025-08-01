@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Pramanatha | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="body-wrapper">
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo-top">
+        <a href="index.html">
+          <img src="logo/LOGO-01.svg" alt="Logo Psycatdelic" />
+        </a>
+      </div>
+
+      <!-- Burger Button -->
+      <div class="burger" id="burger" aria-label="Toggle navigation menu" role="button" tabindex="0">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html">HOME</a>
+        <a href="https://psycatdelic.netlify.app" class="fancy-link">
+          ARTWORK
+          <span class="hover-scribble-circle">
+          <!-- Your custom SVG goes here -->
+          <img src="media/SCRIBLE_CIRCLE.svg" alt="Scribble circle" />
+          </span>
+           <span class="hover-scribble-art-gallery">
+          <img src="media/SCRIBLE_ART_GALLERY.svg" alt="Scribble art gallery" />
+        </span>
+        </a>
+        <a href="https://www.behance.net/pramanatha" class="fancy-link">
+          PROJECTS
+          <span class="hover-scribble-circle">
+          <!-- Your custom SVG goes here -->
+          <img src="media/SCRIBLE_CIRCLE.svg" alt="Scribble circle" />
+          </span>
+        </a>
+        <a href="https://pramanathay.framer.media/insights" class="fancy-link">
+          INSIGHTS
+          <span class="hover-scribble-circle">
+          <!-- Your custom SVG goes here -->
+          <img src="media/SCRIBLE_CIRCLE.svg" alt="Scribble circle" />
+          </span>
+        </a>
+        <a href="https://pramanathay.framer.media/about" class="fancy-link">
+          ABOUT ME
+          <span class="hover-scribble-circle">
+          <!-- Your custom SVG goes here -->
+          <img src="media/SCRIBLE_CIRCLE.svg" alt="Scribble circle" />
+          </span>
+        </a>
+        <!-- MOBILE VERSION of the SHOP+ button -->
+        <div class="mobile-shop-wrapper">
+          <button class="mobile-shop-btn" onclick="window.open('https://psycatdelic.gumroad.com/', '_blank')">SHOP+</button>
+        </div>
+        </nav>
+
+      <div class="social-icons">
+        <a href="https://www.tiktok.com/@cairanasamlambung" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/cairanasamlambung" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@WhyAmIEvenTyping" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.behance.net/pramanatha" target="_blank"><i class="fab fa-behance"></i></a>
+      </div>
+      <button class="header-btn desktop-only" onclick="window.open('https://psycatdelic.gumroad.com/', '_blank')">SHOP+</button>
+
+    </div>
+  </header>
+
+  <button id="music-toggle" aria-label="Toggle background music" aria-pressed="false">
+        <i class="fas fa-music"></i>
+      </button>
+      <audio id="bg-music" loop>
+      <source src="music/Spark_the_Dutch_Tuomo_96kbps.mp3" type="audio/mpeg" />
+      <!-- Your browser does not support the audio element. -->
+      </audio>
+
+      <!-- content -->
+  <div class="content">
+
+    <section class="hero-image">
+  <img src="images/The_Last_of_Us.webp" alt="Psycatdelic Home" />
+  <!-- Hero Section -->
+  <div class="hero-text">
+    <div class="hero-text-inner">
+    <h1>Hi, I'm Pramanatha</h1>
+    <p>Feel free to explore my work, a curated collection of ideas and design.</p>
+    </div>
+  </div> 
+    </section>
+
+    <!-- WHAT IM COOKIN -->
+    <div class="cookin-wrapper">
+<div class="fullscreen-text-subtext">
+  <img src="media/SCRIBLE_SEE_WHAT_IM_COOKIN.svg" alt="See what im cookin" class="im-cookin">  
+    </div>
+    </div>
+
+  <!-- PSYCATDELIC TEXT -->
+  <section class="fullscreen-title">
+  <h2>PSYCATDELIC</h2>
+  
+  </section>
+
+  <!-- AUTOPLAY #1 -->
+    <section id="suspicious-section" class="video-section">
+
+
+        <!-- Scribble Images -->
+  <div id="scribbles">
+    <img src="media/SCRIBLE_WATCH_ME.svg" class="scribble hidden" id="scribble-1" alt="scribble 1">
+    <img src="media/SCRIBLE_EVEN_YOUR_MOM.svg" class="scribble hidden" id="scribble-2" alt="scribble 2">
+    <img src="media/SCRIBLE_PSYCATDELIC.svg" class="scribble hidden" id="scribble-3" alt="scribble 3">
+    <img src="media/SCRIBLE_YOURE_NOT_GONNA_READ.svg" class="scribble hidden" id="scribble-4" alt="scribble 4">
+    <img src="media/SCRIBLE_WK.svg" class="scribble hidden" id="scribble-5" alt="scribble 5">
+  </div>
+
+   <!-- Scroll markers -->
+  <div class="scribble-trigger" data-target="scribble-1" style="top: 10%;"></div>
+  <div class="scribble-trigger" data-target="scribble-2" style="top: 70%;"></div>
+  <div class="scribble-trigger" data-target="scribble-3" style="top: 155%;"></div>
+  <div class="scribble-trigger" data-target="scribble-4" style="top: 265%;"></div>
+  <div class="scribble-trigger" data-target="scribble-5" style="top: 360%;"></div>
+
+
+  <div class="video-wrapper youtube-version">
+    <!-- Close Button -->
+    <div class="close-btn" id="closeBtn" style="display: none;">✕</div>
+    <!-- Muted preview video -->
+    <video loading="lazy" 
+      id="previewVideo"
+      class="responsive-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      poster="images/poster.jpg"
+      data-src-desktop="videos/MP4/AUTOPLAY_1.mp4"
+      data-src-mobile="videos/MP4/AUTOPLAY_1_MOBILE.mp4">
+      <source src="videos/MP4/AUTOPLAY_1.mp4" type="video/webm" />
+      Your browser does not support the video tag.
+    </video>
+    <!-- Play button overlay -->
+    <div class="play-overlay" id="playOverlay">▶</div>
+    <!-- YouTube iframe (hidden initially) -->
+    <iframe
+      id="videoIframe"
+      src=""
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      style="display: none"
+    ></iframe>
+  </div>
+</section>
+  
+  <!-- AUTOPLAY #2 -->
+  <section class="video-section">
+    <div class="video-wrapper link-version" onclick="window.open('https://www.behance.net/gallery/228044089/Jack-Daniels-Tennessee-Whiskey', '_blank')">
+      <!-- Muted preview video -->
+      <video loading="lazy" 
+      
+      class="responsive-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/poster.jpg"
+    data-src-desktop="videos/MP4/AUTOPLAY_MOTION.mp4"
+      data-src-mobile="videos/MP4/AUTOPLAY_MOTION_MOBILE.mp4">
+      <source src="videos/MP4/AUTOPLAY_MOTION.mp4" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="pointer-area"></div>
+    </div>
+  </section>
+
+   <!-- AUTOPLAY #3 -->
+  <section class="video-section">
+    <div class="video-wrapper link-version" onclick="window.open('https://www.behance.net/gallery/228044089/Jack-Daniels-Tennessee-Whiskey', '_blank')">
+      <!-- Muted preview video -->
+      <video loading="lazy" 
+      
+      class="responsive-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/poster.jpg"
+        data-src-desktop="videos/MP4/AUTOPLAY_2.mp4"
+      data-src-mobile="videos//MP4/AUTOPLAY_2_MOBILE.mp4">
+
+        <source src="videos/MP4/AUTOPLAY_2.mp4" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+       <div class="pointer-area"></div>
+    </div>
+  </section>
+
+   <!-- AUTOPLAY #4 -->
+  <section class="video-section">
+    <div class="video-wrapper link-version" onclick="window.open('https://www.behance.net/gallery/228683249/Digital-Landscape-Art-Course', '_blank')">
+      <!-- Muted preview video -->
+      <video loading="lazy"
+      class="responsive-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/poster.jpg"
+        data-src-desktop="videos/MP4/AUTOPLAY_3.mp4"
+      data-src-mobile="videos/MP4/AUTOPLAY_3_MOBILE.mp4">
+
+        <source src="videos/MP4/AUTOPLAY_3.mp4" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+       <div class="pointer-area"></div>
+    </div>
+  </section>
+
+  <!-- 
+  N
+  E
+  W
+  S 
+  -->
+<section class="insights-section">
+  <!-- INSIGHT TEXT -->
+  <div class="insight-subtext">
+  <img src="media/SCRIBLE_HEAR_ME_YAPPING.svg" alt="Hear me yapping" class="hear-me-yapping">  
+    </div>
+  <h2>EXPLORE MY INSIGHTS</h2>
+  <div class="insights-grid">
+  <!-- CARD 1 -->
+  <a href="https://pramanathay.framer.media/insights/free-to-grab-high-res-plastic-textures-and-sticker-labels-for-your-next-project" class="card-link">
+    <article class="insight-card">
+      <img src="images/GUMROAD_THUMBNAIL_STICKER_FULLSIZE.webp" alt="Psycatdelic plastic textures preview" />
+      <div class="card-content">
+        <span class="category">DOWNLOADS</span>
+        <h3>FREE TO GRAB: HIGH-RES PLASTIC TEXTURES AND STICKER LABELS</h3>
+        <p class="meta">PRAMANATHA YUDANA · DEC 23, 2024</p>
+      </div>
+    </article>
+  </a>
+  <!-- CARD 2 -->
+  <a href="https://pramanathay.framer.media/insights/lighting-basics-highlights-and-shadows" class="card-link">
+    <article class="insight-card">
+      <img src="images/CARD_2.webp" alt="Psycatdelic lighting basics" />
+      <div class="card-content">
+        <span class="category">TIPS & TRICKS</span>
+        <h3>LIGHTING BASICS: HIGHLIGHTS AND SHADOWS</h3>
+        <p class="meta">PRAMANATHA YUDANA · NOV 12, 2024</p>
+      </div>
+    </article> 
+  </a>
+  <!-- CARD 3 -->
+  <a href="https://pramanathay.framer.media/insights/understanding-atmospheric-perspective-and-creating-depth" class="card-link">
+    <article class="insight-card">
+      <img src="images/mountain-clouds.webp" alt="Psycatdelic atmospheric perspective" />
+      <div class="card-content">
+        <span class="category">TIPS & TRICKS</span>
+        <h3>UNDERSTANDING ATMOSPHERIC PERSPECTIVE AND CREATING DEPTH</h3>
+        <p class="meta">PRAMANATHA YUDANA · OCT 10, 2024</p>
+      </div>
+    </article> 
+  </a>
+  </div>
+</section>
+
+</div>
+
+<!-- 
+F
+O
+O
+T
+E
+R -->
+<footer class="footer">
+  <!-- Center: Logo -->
+   <div class="footer-logo-wrapper">
+    <a href="/index.html" class="footer-logo">
+    <img src="logo/LOGO_STICKER.webp" alt="Psycatdelic_Logo" />
+    </a>
+</div>
+
+    <div class="footer-flex-wrapper">
+<!-- footer container 1-->
+  <div class="footer-container">
+    <!-- Email + Location + Newsletter -->
+    <div class="footer-box">
+      <p><strong>EMAIL:</strong> pramanathay@gmail.com</p>
+      <p><strong>LOCATION:</strong> DENPASAR, BALI</p>
+      <div class="gap">
+      <p>I’LL SEND COOL STUFF SOMETIMES</p>
+      <form id="newsletter-form" action="https://formspree.io/f/xqalqbdn" method="POST" class="subscribe-form">
+          <label for="email" class="visually-hidden">Email</label>
+          <div class="allow-right-click">
+          <input type="email" id="email"  name="email" placeholder="Put your email address here, dude"  required />
+          </div>
+          <input type="text" name="_gotcha" style="display:none" aria-hidden="true" tabindex="-1">
+          <input type="hidden" value="https://pramanathay.framer.media/thanks">
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+      </div>
+    </div>
+  </div> <!-- footer container -->
+
+<!-- footer container 2-->
+<div class="footer-container-2">
+   <div class="footer-links-wrapper">
+<!-- left: Links -->
+ <div class="footer-social-link-wrapper">
+    <div class="footer-box">
+      <div class="footer-links">
+        <h4>FIND ME ONLINE</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/cairanasamlambung" target="_blank" rel="noopener noreferrer" >INSTAGRAM</a></li>
+          <li><a href="https://www.behance.net/pramanatha" target="_blank" rel="noopener noreferrer">BEHANCE</a></li>
+          <li><a href="https://psycatdelic.artstation.com" target="_blank" rel="noopener noreferrer">ARTSTATION</a></li>
+          <li><a href="https://www.tiktok.com/@cairanasamlambung" target="_blank" rel="noopener noreferrer">TIKTOK</a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+      <!-- Right: Links -->
+        <div class="footer-quick-link-wrapper">
+       <div class="footer-box">
+      <div class="footer-links">
+        <h4>QUICK LINKS</h4>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="https://psycatdelic.netlify.app/">ARTWORK</a></li>
+          <li><a href="https://www.behance.net/pramanatha">PROJECTS</a></li>
+          <li><a href="https://pramanathay.framer.media/insights">INSIGHTS</a></li>
+          <li><a href="https://pramanathay.framer.media/about">ABOUT ME</a></li>
+          <li><a href="https://psycatdelic.gumroad.com/">SHOP+</a></li>
+        </ul>
+      </div>
+      </div>
+      </div>
+    </div>
+</div> <!-- footer container 2-->
+</div>
+
+<!-- BOTTOM WATERMARK -->
+<div class="footer-bottom">
+  <p><span id="secret-link">© 2025 PSYCATDELIC</span></p>
+  <p>DENPASAR, BALI</p>
+</div>
+</footer>
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.0/bundled/lenis.min.js"></script>
+<script src="main.js"></script>
+</div>
+</body>
+</html>
