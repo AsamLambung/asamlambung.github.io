@@ -599,9 +599,10 @@
       box-shadow: 0 0 30px #d4145a;
     }
     .close-btn {
-      position: absolute;
-      top: 15rem;
-      right: 10rem;
+      position: fixed;
+      top: 5%;
+      transform: translateX(50%);
+      right: 50%;
       font-size: 3rem;
       color: white;
       background: #d4145a;
@@ -611,7 +612,7 @@
       line-height: 70px;
       text-align: center;
       cursor: pointer;
-      z-index: 20;
+      z-index: 99999;
       transition: background 0.3s ease;
     }
     .close-btn:hover {
@@ -621,10 +622,13 @@
     /* RESPONSIVE_TABLETs */
     @media (max-width: 768px) {
     .play-overlay {
+
       font-size: 3rem;
       padding: 0.8rem 1.2rem;
       }
     .close-btn {
+      top: 5%;
+      right: 50%;
       font-size: 1.5rem;
       width: 36px;
       height: 36px;
@@ -638,6 +642,8 @@
       padding: 0.5rem 1rem;
       }
     .close-btn {
+      top: 5%;
+      right: 50%;
       font-size: 1.2rem;
       width: 30px;
       height: 30px;
@@ -707,6 +713,7 @@
       width: 70%;
     }
     }
+
     /* Grid layout */
     .insights-grid {
       display: grid;
@@ -736,7 +743,7 @@
       left: -50px;
       right: -40px;
       bottom: -115px;
-      background: url('/media/border.svg') no-repeat center center;
+      background: url('media/border.svg') no-repeat center center;
       background-size: 100% 75%; /* slightly bigger than the card */
       opacity: 0; /* 💥 must be here */
       pointer-events: none;
@@ -788,6 +795,66 @@
       color: #aaa;
     }
 
+      @media (max-width: 480px) {
+  .insights-section {
+    padding: 4rem 1.5rem; /* reduce extreme left/right padding */
+    text-align: center;
+  }
+
+  .insights-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .insight-subtext {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 85%; /* Give breathing room */
+  }
+
+  .insights-grid {
+    gap: 1.5rem; /* tighter grid for smaller screen */
+  }
+
+  .insight-card {
+    min-height: 320px;
+  }
+
+  .insight-card img {
+    height: 200px; /* crop image height on mobile */
+  }
+
+  .card-content {
+    padding: 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .card-content h3 {
+    font-size: 0.95rem;
+  }
+
+  .category {
+    font-size: 0.65rem;
+  }
+
+  .meta {
+    font-size: 0.75rem;
+  }
+
+  /* Optional: remove hover zoom for touch devices */
+  .insight-card:hover::after,
+  .insight-card:hover img,
+  .insight-card:hover {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
     /* FOOTER */
     .footer {
       background: #0d0d0d;
@@ -814,15 +881,16 @@
       display: flex;
       justify-content: space-between;
       gap: 4rem;
-      max-width: 100%;
+      max-width: 100%; /* max width for large screens */
       margin: 0 auto;
       flex-wrap: wrap; /* responsive stacking */
       border: 1px solid #333;
-      padding: 4rem 4rem 4rem 4rem;
+      padding: 4rem;
     }
     .footer-container, .footer-container-2 {
-        flex: 1;
+      flex: 1;
       min-width: 300px;
+      max-width: 600px; /* 💥 FIXED: prevent excessive stretch on big screens */
       display: flex;
       flex-direction: column;
       gap: 4rem;
@@ -840,6 +908,8 @@
       min-width: 200px;
       /* border: #d4145a 1px solid;  */
     }
+
+    
 
     /* footer element newsletter-link-quicklink */
     .footer-box {
@@ -878,6 +948,9 @@
       display: flex;
       gap: 1.5rem;
       flex-wrap: wrap;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;     
     }
     .gap {
       margin: 2rem 0rem;
@@ -885,17 +958,18 @@
       flex-direction: column;
       gap: 1.5rem; /* ← adjust this for more or less space */
     }
+    
     .subscribe-form input {
-      min-width: 400PX;
+      width: 400px;
+      max-width: 500px; /* Limit width on larger screens */
       min-height: 50px;
-      max-width: 500px;  /* or 100%, or any value that works for your layout */
       padding: 0.5rem 1rem;
-      border-radius: 0px;
       border: none;
       outline: none;
       background: #222;
       color: #FAFAFA;
-      flex-grow: 1;
+      flex-grow: 0;
+      box-sizing: border-box;
     }
     .subscribe-form input::placeholder {
       font-size: 1rem;
@@ -912,6 +986,7 @@
       font-weight: bold;
       cursor: pointer;
       transition: background 0.2s ease;
+      flex-shrink: 0;
     }
     .subscribe-form input:focus,
     .subscribe-form button:focus {
@@ -926,6 +1001,73 @@
       position: absolute;
       left: -9999px;
     }
+
+    /* =========================== */
+/* 📱 MOBILE RESPONSIVE FIXES */
+/* =========================== */
+@media (max-width: 480px) {
+ 
+
+  .footer-logo img {
+    height: 60px;
+    transform: rotate(-20deg);
+  }
+
+  .footer-links ul li,
+  .footer-links h4 {
+    font-size: 0.85rem;
+  }
+
+  .footer-box p {
+    font-size: 0.85rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;         /* 💥 Stack input + button on mobile */
+    align-items: flex-start;
+  }
+
+  .subscribe-form input {
+    width: 100px;
+    max-width: 100%;
+  }
+
+
+  .footer-links-wrapper {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .subscribe-form {
+    flex-direction: column;         /* 💥 Stack input + button on mobile */
+    align-items: flex-start;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-flex-wrapper {
+    padding: 2rem;
+  }
+   .footer {
+    padding: 3.5rem 2rem 1rem 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  
+  
+  .subscribe-form input {
+    width: 100%;
+    max-width: 100%;
+  }}
+
+  
+
+
     .footer-bottom {
       margin-top: 2rem;
       display: flex;

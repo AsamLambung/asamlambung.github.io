@@ -231,19 +231,34 @@ if (newsletterForm) {
 
  
   document.getElementById("secret-link").addEventListener("click", () => {
+    alert("Whoa... how did you find this? 👀\n\nWelcome to Pramanatha's secret vault.");
     window.open("https://drive.google.com/drive/folders/1P1znApJKlESTNS2le_bd5dbs_vkb1yV8", "_blank");
   });
 
 // LENIS SMOOTH SCROLL
-const lenis = new Lenis({
-  duration: 1.5,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-  smooth: true
+window.addEventListener('load', () => {
+  const checkLenis = setInterval(() => {
+    if (typeof Lenis !== 'undefined') {
+      clearInterval(checkLenis);
+      console.log("✅ Lenis is now available. Initializing...");
+
+      const lenis = new Lenis({
+        duration: 1.5,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smooth: true,
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    } else {
+      console.warn("⏳ Waiting for Lenis...");
+    }
+  }, 100);
 });
 
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
 
-requestAnimationFrame(raf);
+

@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="description" content="Digital art and motion design by Pramanatha Yudana — a portfolio of animation, storytelling, and creative visuals.">
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pramanatha | Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="icon" href="logo/LOGO-01.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" 
+  onload="this.onload=null;this.media='all';" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -34,7 +37,7 @@
           <img src="media/SCRIBLE_ART_GALLERY.svg" alt="Scribble art gallery" />
         </span>
         </a>
-        <a href="https://www.behance.net/pramanatha" class="fancy-link">
+        <a href="https://www.behance.net/pramanatha" class="fancy-link" target="_blank" rel="noopener noreferrer">
           PROJECTS
           <span class="hover-scribble-circle">
           <!-- Your custom SVG goes here -->
@@ -62,10 +65,10 @@
         </nav>
 
       <div class="social-icons">
-        <a href="https://www.tiktok.com/@cairanasamlambung" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.instagram.com/cairanasamlambung" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.youtube.com/@WhyAmIEvenTyping" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.behance.net/pramanatha" target="_blank"><i class="fab fa-behance"></i></a>
+        <a href="https://www.tiktok.com/@cairanasamlambung" aria-label="Tiktok profile of Pramanatha Yudana" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/cairanasamlambung" aria-label="Instagram profile of Pramanatha Yudana" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@WhyAmIEvenTyping" aria-label="Youtube profile of Pramanatha Yudana" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.behance.net/pramanatha" aria-label="Behance profile of Pramanatha Yudana" target="_blank"><i class="fab fa-behance"></i></a>
       </div>
       <button class="header-btn desktop-only" onclick="window.open('https://psycatdelic.gumroad.com/', '_blank')">SHOP+</button>
 
@@ -84,7 +87,7 @@
   <div class="content">
 
     <section class="hero-image">
-  <img src="images/The_Last_of_Us.webp" alt="Psycatdelic Home" />
+  <img src="images/The_Last_of_Us.webp" decoding="async" alt="Psycatdelic Home" />
   <!-- Hero Section -->
   <div class="hero-text">
     <div class="hero-text-inner">
@@ -97,7 +100,7 @@
     <!-- WHAT IM COOKIN -->
     <div class="cookin-wrapper">
 <div class="fullscreen-text-subtext">
-  <img src="media/SCRIBLE_SEE_WHAT_IM_COOKIN.svg" alt="See what im cookin" class="im-cookin">  
+  <img src="media/SCRIBLE_SEE_WHAT_IM_COOKIN.svg" loading="lazy" decoding="async" alt="See what im cookin" class="im-cookin">  
     </div>
     </div>
 
@@ -139,7 +142,6 @@
       muted
       loop
       playsinline
-      poster="images/poster.jpg"
       data-src-desktop="videos/MP4/AUTOPLAY_1.mp4"
       data-src-mobile="videos/MP4/AUTOPLAY_1_MOBILE.mp4">
       <source src="videos/MP4/AUTOPLAY_1.mp4" type="video/webm" />
@@ -161,16 +163,15 @@
   
   <!-- AUTOPLAY #2 -->
   <section class="video-section">
-    <div class="video-wrapper link-version" onclick="window.open('https://www.behance.net/gallery/228044089/Jack-Daniels-Tennessee-Whiskey', '_blank')">
+    <div class="video-wrapper link-version" onclick="window.open('https://www.behance.net/gallery/231678299/Motion', '_blank')">
       <!-- Muted preview video -->
       <video loading="lazy" 
-      
+       
       class="responsive-video"
         autoplay
         muted
         loop
         playsinline
-        poster="images/poster.jpg"
     data-src-desktop="videos/MP4/AUTOPLAY_MOTION.mp4"
       data-src-mobile="videos/MP4/AUTOPLAY_MOTION_MOBILE.mp4">
       <source src="videos/MP4/AUTOPLAY_MOTION.mp4" type="video/webm" />
@@ -191,7 +192,6 @@
         muted
         loop
         playsinline
-        poster="images/poster.jpg"
         data-src-desktop="videos/MP4/AUTOPLAY_2.mp4"
       data-src-mobile="videos//MP4/AUTOPLAY_2_MOBILE.mp4">
 
@@ -212,7 +212,6 @@
         muted
         loop
         playsinline
-        poster="images/poster.jpg"
         data-src-desktop="videos/MP4/AUTOPLAY_3.mp4"
       data-src-mobile="videos/MP4/AUTOPLAY_3_MOBILE.mp4">
 
@@ -232,14 +231,14 @@
 <section class="insights-section">
   <!-- INSIGHT TEXT -->
   <div class="insight-subtext">
-  <img src="media/SCRIBLE_HEAR_ME_YAPPING.svg" alt="Hear me yapping" class="hear-me-yapping">  
+  <img src="media/SCRIBLE_HEAR_ME_YAPPING.svg" loading="lazy" decoding="async" alt="Hear me yapping" class="hear-me-yapping">  
     </div>
   <h2>EXPLORE MY INSIGHTS</h2>
   <div class="insights-grid">
   <!-- CARD 1 -->
   <a href="https://pramanathay.framer.media/insights/free-to-grab-high-res-plastic-textures-and-sticker-labels-for-your-next-project" class="card-link">
     <article class="insight-card">
-      <img src="images/GUMROAD_THUMBNAIL_STICKER_FULLSIZE.webp" alt="Psycatdelic plastic textures preview" />
+      <img src="images/GUMROAD_THUMBNAIL_STICKER_FULLSIZE.webp" loading="lazy" decoding="async" alt="Psycatdelic plastic textures preview" />
       <div class="card-content">
         <span class="category">DOWNLOADS</span>
         <h3>FREE TO GRAB: HIGH-RES PLASTIC TEXTURES AND STICKER LABELS</h3>
@@ -250,7 +249,7 @@
   <!-- CARD 2 -->
   <a href="https://pramanathay.framer.media/insights/lighting-basics-highlights-and-shadows" class="card-link">
     <article class="insight-card">
-      <img src="images/CARD_2.webp" alt="Psycatdelic lighting basics" />
+      <img src="images/CARD_2.webp" loading="lazy" decoding="async" alt="Psycatdelic lighting basics" />
       <div class="card-content">
         <span class="category">TIPS & TRICKS</span>
         <h3>LIGHTING BASICS: HIGHLIGHTS AND SHADOWS</h3>
@@ -261,7 +260,7 @@
   <!-- CARD 3 -->
   <a href="https://pramanathay.framer.media/insights/understanding-atmospheric-perspective-and-creating-depth" class="card-link">
     <article class="insight-card">
-      <img src="images/mountain-clouds.webp" alt="Psycatdelic atmospheric perspective" />
+      <img src="images/mountain-clouds.webp" loading="lazy" decoding="async" alt="Psycatdelic atmospheric perspective" />
       <div class="card-content">
         <span class="category">TIPS & TRICKS</span>
         <h3>UNDERSTANDING ATMOSPHERIC PERSPECTIVE AND CREATING DEPTH</h3>
@@ -354,8 +353,8 @@ R -->
   <p>DENPASAR, BALI</p>
 </div>
 </footer>
-<script src="https://unpkg.com/@studio-freight/lenis@1.0.0/bundled/lenis.min.js"></script>
-<script src="main.js"></script>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.35/bundled/lenis.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
